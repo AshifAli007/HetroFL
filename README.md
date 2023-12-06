@@ -14,7 +14,7 @@
 
 - Train MNIST dataset (IID) with CNN model, 100 users, active rate 0.1, model split 'Fix', model split mode 'a-b (20%-80%)', BatchNorm, Scaler (True) , Masked CrossEntropy (True)
   ```ruby
-  python train_classifier_fed.py --data_name MNIST --model_name conv --control_name 1_100_0.1_iid_fix_a2-b8_bn_1_1
+  python3 train_classifier_fed.py --data_name MNIST --model_name conv --control_name 1_100_0.1_iid_fix_a2-b8_bn_1_1
   ```
 - Train CIFAR10 dataset (Non-IID 2 classes) with ResNet model, 10 users, active rate 0.1, model split 'Dynamic', model split mode 'a-b-c (uniform)', GroupNorm, Scaler (False) , Masked CrossEntropy (False)
   ```ruby
